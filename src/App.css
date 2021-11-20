@@ -71,14 +71,6 @@ p {
   width: 800px;
 }
 
-.form-control {
-  width: 330px;
-  position: relative;
-  left: 200px;
-  bottom: 5px;
-  box-shadow: 1px 1px 1px #000;
-}
-
 .weather-forecast {
   margin-top: 28px;
   text-align: center;
@@ -110,14 +102,19 @@ p {
 
 .search-button {
   position: relative;
-  left: 300px;
+  left: 150px;
   bottom: 43px;
   background-color: #1d61d7;
   box-shadow: 1px 1px 1px #000;
 }
 
 .form-control {
-  width: 360px;
+  display: block;
+  width: 280px;
+  position: relative;
+  left: 200px;
+  bottom: 5px;
+  box-shadow: 1px 1px 1px #000;
 }
 
 .highs-lows {

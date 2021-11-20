@@ -10,7 +10,7 @@ export default function Weather() {
             <div className="overview">
               <h1> San Diego </h1>
               <h2>
-                <img src="http://openweathermap.org/img/wn/50d@2x.png" />
+                <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" />
 
                 <span className="temprature"> 24 </span>
                 <span className="unit">
