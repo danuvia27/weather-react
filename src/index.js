@@ -9,6 +9,12 @@ function App() {
   return (
     <div className="App">
       <Weather />
+      <footer>
+        This project was coded by Carolina Vallecillo and is{""}
+        <a href="https://github.com/danuvia27/weather-react" target="_blank">
+          open-sourced on GitHub
+        </a>
+      </footer>
     </div>
   );
 }
