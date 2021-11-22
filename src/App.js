@@ -1,5 +1,5 @@
 import React from "react";
-
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
             Search
           </button>
         </form>
-
+        <Weather />
         <div className="weather-forecast" id="forecast">
           <div className="row">
             <div className="col-2">
