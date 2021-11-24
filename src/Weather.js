@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import Search from "./Search";
 
 export default function Weather(props) {
@@ -11,7 +12,7 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Friday 10:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "http://openweathermap.org/img/wn/50d@2x.png",
       wind: response.data.wind.speed,
@@ -47,12 +48,11 @@ export default function Weather(props) {
                   </span>
                 </h2>
                 <ul>
-                  <li></li>
-                  <span className="text-capitalize">
+                  <li className="text-capitalize">
                     {weatherData.description}{" "}
-                  </span>
+                  </li>
                   <li>
-                    <span>{weatherData.date}</span>
+                    <formattedDate date={weatherData.date} />
                   </li>
                   <li>Humidity: {weatherData.humidity}%</li>
                   <li>Wind: {weatherData.wind} km/h</li>
