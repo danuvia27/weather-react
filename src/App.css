@@ -39,6 +39,22 @@ h3 {
   font-family: "Roboto Slab", serif;
 }
 
+.search-button {
+  position: relative;
+  left: 300px;
+  bottom: 43px;
+  background-color: #1d61d7;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.form-control {
+  width: 330px;
+  position: relative;
+  left: 200px;
+
+  box-shadow: 1px 1px 1px #000;
+}
+
 .unit {
   font-size: 20px;
   position: relative;
@@ -127,21 +143,4 @@ ul {
   left: 40px;
   font-family: Dancing Script, cursive;
   font-size: 13px;
-}
-
-.form-control {
-  display: block;
-  width: 300px;
-  position: relative;
-  left: 200px;
-  bottom: 5px;
-  box-shadow: 1px 1px 1px #000;
-}
-
-.search-button {
-  position: relative;
-  left: 150px;
-  bottom: 43px;
-  background-color: #1d61d7;
-  box-shadow: 1px 1px 1px #000;
 }
