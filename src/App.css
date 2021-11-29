@@ -51,7 +51,7 @@ h3 {
   width: 330px;
   position: relative;
   left: 200px;
-
+  bottom: 2px;
   box-shadow: 1px 1px 1px #000;
 }
 
