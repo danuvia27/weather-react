@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Weather defaultCity="San Diego" />
-      <footer>
+      <footer className="footer">
         This project was coded by Carolina Vallecillo and is {""}
         <a
           href="https://github.com/danuvia27/weather-react"

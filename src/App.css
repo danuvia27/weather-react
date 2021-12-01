@@ -44,12 +44,10 @@ h3 {
   right: 25px;
 }
 
-.float-left canvas {
-  height: 55px;
-  width: 55px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  display: inline-block;
+.float-left {
+  position: relative;
+  left: 25px;
+  top: 10px;
 }
 
 .search-button {
@@ -69,10 +67,15 @@ h3 {
 }
 
 .unit {
-  font-size: 16px;
+  font-size: 15px;
   position: relative;
   bottom: 25px;
-  left: 10px;
+  left: 5px;
+}
+.weather-icon {
+  position: relative;
+  right: 77px;
+  bottom: 60px;
 }
 .active {
   color: #333333;
@@ -112,15 +115,13 @@ ul {
   list-style-type: none;
   position: relative;
   left: 20px;
-  bottom: 30px;
+  bottom: 100px;
   opacity: 0.7;
 }
 
 .footer {
-  text-align: left;
+  text-align: center;
   position: relative;
-  top: 65px;
-  left: 40px;
   font-family: Dancing Script, cursive;
   font-size: 13px;
 }
