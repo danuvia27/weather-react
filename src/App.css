@@ -17,7 +17,6 @@ h1 {
   color: #1d61d7;
   font-family: "Roboto Slab", serif;
   font-size: 60px;
-  position: relative;
   left: 30px;
   margin: 50px auto;
   padding: 0;
@@ -27,23 +26,28 @@ h2 {
   font-size: 40px;
   color: #333333;
 }
-
-.overview {
+.col-11 {
   position: relative;
-  right: 25px;
+  bottom: 20px;
+  left: 10px;
 }
 
+.col-12 {
+  position: relative;
+  bottom: 20px;
+  right: 15px;
+}
 .search-button {
   position: relative;
-  left: 300px;
-  bottom: 43px;
+  left: 200px;
+  bottom: 40px;
   background-color: #1d61d7;
   box-shadow: 1px 1px 1px #000;
 }
 
 .form-control {
-  width: 330px;
   position: relative;
+  width: 330px;
   left: 200px;
   bottom: 2px;
   box-shadow: 1px 1px 1px #000;
@@ -78,7 +82,6 @@ p {
 }
 
 .conditions {
-  position: relative;
   left: 150px;
   bottom: 60px;
 }
@@ -86,7 +89,6 @@ p {
 ul {
   text-align: center;
   list-style-type: none;
-  position: relative;
   left: 20px;
   bottom: 100px;
   opacity: 0.7;
@@ -94,7 +96,6 @@ ul {
 
 .footer {
   text-align: center;
-  position: relative;
   font-family: Dancing Script, cursive;
   font-size: 13px;
 }
