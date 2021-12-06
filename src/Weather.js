@@ -6,7 +6,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -40,7 +39,7 @@ export default function Weather(props) {
         <div className="weather-app-wrapper">
           <div className="weather-app">
             <WeatherInfo data={weatherData} />
-            <div classname="search-engine">
+            <div className="search-engine">
               <form onSubmit={handleSubmit}>
                 <input
                   className="form-control"
