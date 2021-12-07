@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -20,7 +21,7 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "6ebe89c8349b2767cc0894daf553186c";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -39,6 +40,7 @@ export default function Weather(props) {
         <div className="weather-app-wrapper">
           <div className="weather-app">
             <WeatherInfo data={weatherData} />
+
             <div className="search-engine">
               <form onSubmit={handleSubmit}>
                 <input
@@ -52,6 +54,7 @@ export default function Weather(props) {
                   Search
                 </button>
               </form>
+              <WeatherForecast />
             </div>
           </div>
         </div>
