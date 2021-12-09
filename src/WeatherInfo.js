@@ -25,7 +25,7 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row">
         <div className="col-12">
-          <div class="d-flex justify-content-center">
+          <div className="d-flex justify-content-center">
             <ul>
               <li className="text-capitalize">{props.data.description} </li>
               <li>
